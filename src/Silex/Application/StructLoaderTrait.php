@@ -7,7 +7,7 @@
    * Structure loader trait.
    *
    */
-  trait StrcutLoaderTrait {
+  trait StructLoaderTrait {
 
     /**
      *
