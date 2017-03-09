@@ -68,10 +68,10 @@
           if ($file == '.' || $file == '..')
             continue;
 
-          if (is_dir ($file) && $recursive)
+          if (is_dir ("$path/$file") && $recursive)
             $app['sloader.autoload'] ("$path/$file", $recursive);
 
-          else if (pathinfo ($file, PATHINFO_EXTENSION) == 'php')
+          else if (pathinfo ("$path/$file", PATHINFO_EXTENSION) == 'php')
             require_once "$path/$file";
         }
       });
