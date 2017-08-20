@@ -22,7 +22,7 @@
      *
      *
      */
-    public function autoload ($fileOrPath, $pathOrRecursive, $recursive = true) {
+    public function autoload ($fileOrPath, $pathOrRecursive = true, $recursive = true) {
 
       // Load specified file before autoloading
       if (is_array ($fileOrPath)) {
