@@ -4,17 +4,17 @@
 
 
   /**
-   * Structure loader trait.
+   * File loader trait.
    *
    */
-  trait StructLoaderTrait {
+  trait FileLoaderTrait {
 
     /**
      *
      *
      */
     public function load ($file, $path) {
-      return $this['sloader.seek'] ($file, $path);
+      return $this['floader.seek'] ($file, $path);
     }
 
 
@@ -30,7 +30,7 @@
         $file = $fileOrPath;
         $path = $pathOrRecursive;
 
-        $this['sloader.seek'] ($file, $path);
+        $this['floader.seek'] ($file, $path);
       }
 
       else {
@@ -41,6 +41,6 @@
           $recursive = $pathOrRecursive;
       }
 
-      return $this['sloader.autoload'] ($path, $recursive);
+      return $this['floader.autoload'] ($path, $recursive);
     }
   }

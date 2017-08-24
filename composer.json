@@ -1,19 +1,22 @@
 {
-  "name": "wake/silex-struct-loader",
-  "description": "Silex 2 service provider (and trait) for Struct Loader library.",
-  "version": "v0.0.0",
+  "name": "wake/silex-file-loader",
+  "description": "An easier way to load php files in Silex 2.",
+  "version": "v0.1.0",
   "type": "library",
   "keywords": ["silex", "silex2", "php", "loader"],
-  "homepage": "https://github.com/wake/Silex-Struct-Loader",
+  "homepage": "https://github.com/wake/Silex-File-Loader",
   "license": "MIT",
   "authors": [
     {
       "name": "Wake Liu",
       "email": "wake.gs@gmail.com",
-      "homepage": "https://wake.gs/",
-      "role": "Developer"
+      "homepage": "http://wake.gs"
     }
   ],
+  "support": {
+    "issues": "https://github.com/wake/Silex-File-Loader/issues",
+    "source": "https://github.com/wake/Silex-File-Loader"
+  },
   "require": {
     "php": ">=5.3.0",
     "silex/silex": "~2"
