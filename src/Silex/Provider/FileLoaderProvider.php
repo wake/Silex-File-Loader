@@ -16,13 +16,15 @@
 
     /**
      *
-     * @param  Container $app
+     * Register provider
+     *
      */
     public function register (Container $app) {
 
 
       /**
        *
+       * Seeking files recursively
        *
        */
       $app['floader.seek'] = $app->protect (function ($file, $path) use ($app) {
@@ -45,6 +47,7 @@
 
       /**
        *
+       * Load file if exists
        *
        */
       $app['floader.load'] = $app->protect (function ($file, $path) use ($app) {
@@ -54,6 +57,7 @@
 
       /**
        *
+       * Load whole directory automatically
        *
        */
       $app['floader.autoload'] = $app->protect (function ($path, $recursive = true) use ($app) {
